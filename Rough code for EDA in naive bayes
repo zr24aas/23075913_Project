@@ -1,0 +1,24 @@
+# Loading dataset
+df = pd.read_csv("spamdataset.csv")
+
+# Listing of columns you want to plot
+columns_to_plot = ["LABEL", "URL", "EMAIL", "PHONE"]
+
+for col in columns_to_plot:
+    # Counting value distribution
+    counts = df[col].value_counts()
+
+    # --- Pie Chart ---
+    plt.figure(figsize=(6, 6))
+    plt.pie(counts, labels=counts.index, autopct='%1.1f%%')
+    plt.title(f"Distribution of {col}")
+    plt.show()
+
+    # --- Bar Chart ---
+    plt.figure(figsize=(6, 4))
+    counts.plot(kind='bar')
+    plt.title(f"Bar Chart of {col}")
+    plt.xlabel(col)
+    plt.ylabel("Count")
+    plt.xticks(rotation=0)
+    plt.show()
