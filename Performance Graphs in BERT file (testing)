@@ -1,0 +1,41 @@
+# BERT results
+bert_precision = 0.99
+bert_recall = 0.99
+bert_f1 = 0.99
+bert_accuracy = 0.99
+
+# ----------- GRAPH 1: Accuracy -----------
+plt.figure(figsize=(6,4))
+plt.bar(["BERT"], [bert_accuracy], color="skyblue")
+plt.title("BERT Model Accuracy")
+plt.ylabel("Accuracy")
+plt.ylim(0.9, 1.0)
+plt.grid(axis='y', linestyle='--', alpha=0.6)
+plt.show()
+
+# ----------- GRAPH 2: Precision -----------
+plt.figure(figsize=(6,4))
+plt.bar(["BERT"], [bert_precision], color="lightgreen")
+plt.title("BERT Precision")
+plt.ylabel("Precision")
+plt.ylim(0.9, 1.0)
+plt.grid(axis='y', linestyle='--', alpha=0.6)
+plt.show()
+
+# ----------- GRAPH 3: Recall -----------
+plt.figure(figsize=(6,4))
+plt.bar(["BERT"], [bert_recall], color="orange")
+plt.title("BERT Recall")
+plt.ylabel("Recall")
+plt.ylim(0.9, 1.0)
+plt.grid(axis='y', linestyle='--', alpha=0.6)
+plt.show()
+
+# ----------- GRAPH 4: F1-Score -----------
+plt.figure(figsize=(6,4))
+plt.bar(["BERT"], [bert_f1], color="red")
+plt.title("BERT F1 Score")
+plt.ylabel("F1 Score")
+plt.ylim(0.9, 1.0)
+plt.grid(axis='y', linestyle='--', alpha=0.6)
+plt.show()
