@@ -1,0 +1,41 @@
+# Naive Bayes results
+nb_precision = 0.96
+nb_recall = 0.95
+nb_f1 = 0.95
+nb_accuracy = 0.95
+
+# ----------- GRAPH 1: Accuracy -----------
+plt.figure(figsize=(6,4))
+plt.bar(["Naive Bayes"], [nb_accuracy], color="skyblue")
+plt.title("Naive Bayes Model Accuracy")
+plt.ylabel("Accuracy")
+plt.ylim(0.8, 1.0)
+plt.grid(axis='y', linestyle='--', alpha=0.6)
+plt.show()
+
+# ----------- GRAPH 2: Precision -----------
+plt.figure(figsize=(6,4))
+plt.bar(["Naive Bayes"], [nb_precision], color="lightgreen")
+plt.title("Naive Bayes Precision")
+plt.ylabel("Precision")
+plt.ylim(0.8, 1.0)
+plt.grid(axis='y', linestyle='--', alpha=0.6)
+plt.show()
+
+# ----------- GRAPH 3: Recall -----------
+plt.figure(figsize=(6,4))
+plt.bar(["Naive Bayes"], [nb_recall], color="orange")
+plt.title("Naive Bayes Recall")
+plt.ylabel("Recall")
+plt.ylim(0.8, 1.0)
+plt.grid(axis='y', linestyle='--', alpha=0.6)
+plt.show()
+
+# ----------- GRAPH 4: F1-Score -----------
+plt.figure(figsize=(6,4))
+plt.bar(["Naive Bayes"], [nb_f1], color="red")
+plt.title("Naive Bayes F1 Score")
+plt.ylabel("F1 Score")
+plt.ylim(0.8, 1.0)
+plt.grid(axis='y', linestyle='--', alpha=0.6)
+plt.show()
